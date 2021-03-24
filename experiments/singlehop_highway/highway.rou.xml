@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Sat Dec 22 10:08:51 2018 by SUMO duarouter Version 0.25.0
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="highway.net.xml"/>
+        <trip-files value="highway.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="highway.rou.xml"/>
+    </output>
+
+    <processing>
+        <ignore-errors value="true"/>
+    </processing>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    			
+  <route id="r0" edges="0/2to1/2 1/2to2/2 2/2to3/2"/>		   
+  <route id="r1" edges="0/1to1/1 1/1to2/1 2/1to3/1"/>
+  <route id="r2" edges="0/0to1/0 1/0to2/0 2/0to3/0"/>
+  
+ 
+  <vType id="car0" maxSpeed="15" />
+  <vType id="car1" maxSpeed="15" />
+  <vType id="car2" maxSpeed="15" />
+  
+  <flow id="f0" type="car1" vClass="car1" route="r0" begin="0.00" end="200.00" period="1"/>
+  <flow id="f1" type="car1" vClass="car1" route="r1" begin="0.00" end="200.00" period="1"/>
+  <flow id="f2" type="car1" vClass="car1" route="r2" begin="0.00" end="200.00" period="1"/>
+</routes>

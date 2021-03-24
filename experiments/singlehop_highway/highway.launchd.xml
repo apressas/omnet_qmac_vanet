@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+	<copy file="highway.net.xml" />
+	<copy file="highway.rou.xml" />
+	<copy file="highway.sumo.cfg" type="config" />
+</launch>

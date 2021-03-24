@@ -1,0 +1,97 @@
+version 2
+run nodebug-0-20181110-11:10:08-4743
+attr configname nodebug
+attr datetime 20181110-11:10:08
+attr experiment nodebug
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network RSUExampleScenario
+attr processid 4743
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.coreDebug false
+param **.debug false
+param *.**.nic.mac1609_4.bitrate 18Mbps
+param *.**.nic.mac1609_4.txPower 20mW
+param *.**.nic.mac1609_4.useServiceChannel false
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.sensitivity -89dBm
+param *.**.nic.phy80211p.thermalNoise -110dBm
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.useThermalNoise true
+param *.annotations.draw false
+param *.connectionManager.alpha 2.0
+param *.connectionManager.carrierFrequency "5.890e9 Hz"
+param *.connectionManager.pMax 20mW
+param *.connectionManager.sat -89dBm
+param *.connectionManager.sendDirect true
+param *.manager.autoShutdown true
+param *.manager.host "\"localhost\""
+param *.manager.launchConfig "xmldoc(\"erlangen.launchd.xml\")"
+param *.manager.margin 25
+param *.manager.moduleDisplayString "\"\""
+param *.manager.moduleName "\"node\""
+param *.manager.moduleType "\"org.car2x.veins.nodes.Car\""
+param *.manager.numVehicles 20
+param *.manager.port 9999
+param *.manager.updateInterval 0.1s
+param *.node[*0].veinsmobility.accidentCount 1
+param *.node[*0].veinsmobility.accidentDuration 30s
+param *.node[*0].veinsmobility.accidentStart 75s
+param *.node[*].appl.beaconInterval 1s
+param *.node[*].appl.beaconPriority 3
+param *.node[*].appl.dataOnSch false
+param *.node[*].appl.dataPriority 2
+param *.node[*].appl.debug false
+param *.node[*].appl.headerLength "256 bit"
+param *.node[*].appl.maxOffset 0.005s
+param *.node[*].appl.sendBeacons false
+param *.node[*].appl.sendData true
+param *.node[*].applType "\"TraCIDemo11p\""
+param *.node[*].mobilityType "\"TraCIMobility\""
+param *.node[*].mobilityType.debug true
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 1.895
+param *.node[*].veinsmobilityType "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+param *.node[*].veinsmobilityType.debug true
+param *.obstacles.debug false
+param *.obstacles.obstacles "xmldoc(\"config.xml\", \"//AnalogueModel[@type='SimpleObstacleShadowing']/obstacles\")"
+param *.playgroundSizeX 2500m
+param *.playgroundSizeY 2500m
+param *.playgroundSizeZ 50m
+param *.rsu[*].appl.beaconInterval 1s
+param *.rsu[*].appl.beaconPriority 3
+param *.rsu[*].appl.dataOnSch false
+param *.rsu[*].appl.dataPriority 2
+param *.rsu[*].appl.debug false
+param *.rsu[*].appl.headerLength "256 bit"
+param *.rsu[*].appl.maxOffset 0.005s
+param *.rsu[*].appl.sendBeacons false
+param *.rsu[*].appl.sendData true
+param *.rsu[*].applType "\"TraCIDemoRSU11p\""
+param *.rsu[0].mobility.x 2000
+param *.rsu[0].mobility.y 2000
+param *.rsu[0].mobility.z 3
+param *.world.use2D false
+param *.world.useTorus false
+
+scalar RSUExampleScenario.rsu[0].nic.phy80211p 	busyTime 	nan
+scalar RSUExampleScenario.rsu[0].nic.mac1609_4 	ReceivedUnicastPackets 	0
+scalar RSUExampleScenario.rsu[0].nic.mac1609_4 	ReceivedBroadcasts 	0
+scalar RSUExampleScenario.rsu[0].nic.mac1609_4 	SentPackets 	0
+scalar RSUExampleScenario.rsu[0].nic.mac1609_4 	SNIRLostPackets 	0
+scalar RSUExampleScenario.rsu[0].nic.mac1609_4 	RXTXLostPackets 	0
+scalar RSUExampleScenario.rsu[0].nic.mac1609_4 	TotalLostPackets 	0
+scalar RSUExampleScenario.rsu[0].nic.mac1609_4 	DroppedPacketsInMac 	0
+scalar RSUExampleScenario.rsu[0].nic.mac1609_4 	TooLittleTime 	0
+scalar RSUExampleScenario.rsu[0].nic.mac1609_4 	TimesIntoBackoff 	0
+scalar RSUExampleScenario.rsu[0].nic.mac1609_4 	SlotsBackoff 	0
+scalar RSUExampleScenario.rsu[0].nic.mac1609_4 	NumInternalContention 	0
+scalar RSUExampleScenario.rsu[0].nic.mac1609_4 	totalBusyTime 	0
